@@ -1,0 +1,168 @@
+storage-class-specifier --> static
+declaration-specifiers-opt --> epsilon
+declaration-specifiers --> storage-class-specifier declaration-specifiers-opt
+pointer-opt --> epsilon
+direct-declarator --> identifier
+declarator --> pointer-opt direct-declarator
+constant --> integer-constant
+primary-expression --> constant
+postfix-expression --> primary-expression
+unary-expression --> postfix-expression
+cast-expression --> unary-expression
+multiplicative-expression --> cast-expression
+additive-expression --> multiplicative-expression
+shift-expression --> additive-expression
+relational-expression --> shift-expression
+equality-expression --> relational-expression
+AND-expression --> equality-expression
+exclusive-OR-expression --> AND-expression
+inclusive-OR-expression --> exclusive-OR-expression
+logical-AND-expression --> inclusive-OR-expression
+logical-OR-expression --> logical-AND-expression
+conditional-expression --> logical-OR-expression
+assignment-expression --> conditional-expression
+initializer --> assignment-expression
+init-declarator --> declarator = initializer
+init-declarator-list --> init-declarator
+init-declarator-list-opt --> init-declarator-list
+declaration --> declaration-specifiers init-declarator-list-opt ;
+external-declaration --> declaration
+translation-unit --> external-declaration
+storage-class-specifier --> register
+declaration-specifiers-opt --> epsilon
+declaration-specifiers --> storage-class-specifier declaration-specifiers-opt
+pointer-opt --> epsilon
+direct-declarator --> identifier
+declarator --> pointer-opt direct-declarator
+constant --> integer-constant
+primary-expression --> constant
+postfix-expression --> primary-expression
+unary-expression --> postfix-expression
+cast-expression --> unary-expression
+multiplicative-expression --> cast-expression
+additive-expression --> multiplicative-expression
+shift-expression --> additive-expression
+relational-expression --> shift-expression
+equality-expression --> relational-expression
+AND-expression --> equality-expression
+exclusive-OR-expression --> AND-expression
+inclusive-OR-expression --> exclusive-OR-expression
+logical-AND-expression --> inclusive-OR-expression
+logical-OR-expression --> logical-AND-expression
+conditional-expression --> logical-OR-expression
+assignment-expression --> conditional-expression
+initializer --> assignment-expression
+init-declarator --> declarator = initializer
+init-declarator-list --> init-declarator
+init-declarator-list-opt --> init-declarator-list
+declaration --> declaration-specifiers init-declarator-list-opt ;
+external-declaration --> declaration
+translation-unit --> translation-unit external-declaration
+storage-class-specifier --> extern
+declaration-specifiers-opt --> epsilon
+declaration-specifiers --> storage-class-specifier declaration-specifiers-opt
+pointer-opt --> epsilon
+direct-declarator --> identifier
+declarator --> pointer-opt direct-declarator
+constant --> integer-constant
+primary-expression --> constant
+postfix-expression --> primary-expression
+unary-expression --> postfix-expression
+cast-expression --> unary-expression
+multiplicative-expression --> cast-expression
+additive-expression --> multiplicative-expression
+shift-expression --> additive-expression
+relational-expression --> shift-expression
+equality-expression --> relational-expression
+AND-expression --> equality-expression
+exclusive-OR-expression --> AND-expression
+inclusive-OR-expression --> exclusive-OR-expression
+logical-AND-expression --> inclusive-OR-expression
+logical-OR-expression --> logical-AND-expression
+conditional-expression --> logical-OR-expression
+assignment-expression --> conditional-expression
+initializer --> assignment-expression
+init-declarator --> declarator = initializer
+init-declarator-list --> init-declarator
+init-declarator-list-opt --> init-declarator-list
+declaration --> declaration-specifiers init-declarator-list-opt ;
+external-declaration --> declaration
+translation-unit --> translation-unit external-declaration
+identifier-opt --> identifier
+constant --> integer-constant
+primary-expression --> constant
+postfix-expression --> primary-expression
+unary-expression --> postfix-expression
+cast-expression --> unary-expression
+multiplicative-expression --> cast-expression
+additive-expression --> multiplicative-expression
+shift-expression --> additive-expression
+relational-expression --> shift-expression
+equality-expression --> relational-expression
+AND-expression --> equality-expression
+exclusive-OR-expression --> AND-expression
+inclusive-OR-expression --> exclusive-OR-expression
+logical-AND-expression --> inclusive-OR-expression
+logical-OR-expression --> logical-AND-expression
+conditional-expression --> logical-OR-expression
+constant-expression --> conditional-expression
+enumerator --> enumeration-constant = constant-expression
+enumerator-list --> enumerator
+constant --> integer-constant
+primary-expression --> constant
+postfix-expression --> primary-expression
+unary-expression --> postfix-expression
+cast-expression --> unary-expression
+multiplicative-expression --> cast-expression
+additive-expression --> multiplicative-expression
+shift-expression --> additive-expression
+relational-expression --> shift-expression
+equality-expression --> relational-expression
+AND-expression --> equality-expression
+exclusive-OR-expression --> AND-expression
+inclusive-OR-expression --> exclusive-OR-expression
+logical-AND-expression --> inclusive-OR-expression
+logical-OR-expression --> logical-AND-expression
+conditional-expression --> logical-OR-expression
+constant-expression --> conditional-expression
+enumerator --> enumeration-constant = constant-expression
+enumerator-list --> enumerator-list , enumerator
+constant --> integer-constant
+primary-expression --> constant
+postfix-expression --> primary-expression
+unary-expression --> postfix-expression
+cast-expression --> unary-expression
+multiplicative-expression --> cast-expression
+additive-expression --> multiplicative-expression
+shift-expression --> additive-expression
+relational-expression --> shift-expression
+equality-expression --> relational-expression
+AND-expression --> equality-expression
+exclusive-OR-expression --> AND-expression
+inclusive-OR-expression --> exclusive-OR-expression
+logical-AND-expression --> inclusive-OR-expression
+logical-OR-expression --> logical-AND-expression
+conditional-expression --> logical-OR-expression
+constant-expression --> conditional-expression
+enumerator --> enumeration-constant = constant-expression
+enumerator-list --> enumerator-list , enumerator
+enum-specifier --> enum identifier-opt { enumerator-list }
+type-specifier --> enum-specifier
+declaration-specifiers-opt --> epsilon
+declaration-specifiers --> type-specifier declaration-specifiers-opt
+init-declarator-list-opt --> epsilon
+declaration --> declaration-specifiers init-declarator-list-opt ;
+external-declaration --> declaration
+translation-unit --> translation-unit external-declaration
+type-qualifier --> volatile
+type-specifier --> int
+declaration-specifiers-opt --> epsilon
+declaration-specifiers --> type-specifier declaration-specifiers-opt
+declaration-specifiers-opt --> declaration-specifiers
+declaration-specifiers --> type-qualifier declaration-specifiers-opt
+pointer-opt --> epsilon
+direct-declarator --> identifier
+identifier-list-opt --> epsilon
+Error occurred: syntax error
+Line no.: 1
+Unable to parse: )
